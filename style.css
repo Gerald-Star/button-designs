@@ -1,0 +1,263 @@
+/* universal removes all the space around the browser*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic button styling*/
+body {
+    margin: 10px;
+}
+.button {
+    background-color: #4CAF50;
+    border-radius: 5px;
+    color: azure;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: grabbing;
+   
+}
+
+.button1 {
+    background-color: black;
+    color: beige;
+    padding: 10px 30px;
+    border: none;
+    text-align: center;
+    margin: 10px 5px;
+    display: inline-block;
+    
+    cursor: pointer;
+    
+}
+/* You can change the size of the button with
+1. different font sizes/ smaller or bigger
+2. padding property */
+
+.blue {
+    background-color: blue;
+    font-size: 12px;
+}
+
+.red {
+    background-color: red;
+    font-size: 20px;
+}
+
+.shape1{
+    border-radius: 5px;
+}
+
+.shape2{
+    border-radius: 12px;
+}
+
+.shape3{
+    border-radius: 50%;
+}
+
+/* Colored button borders*/
+/* to add transition here and add :hover on the buttons*/
+
+.white {
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 4px 2px;
+    cursor: grabbing;
+    transition-duration: 0.4s;
+}
+
+/* to add transition and make the buttons hoverable add :hover*/
+.border1{
+    border: 2px solid #4CAF50;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 17px 20px 0 rgba(0, 0, 0, 0.19); /* is added on button*/
+}
+.border1:hover{
+    background-color: #4CAF50;
+}
+
+
+.border2{
+    border: 2px solid #008CBA;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 17px 20px 0 rgba(0, 0, 0, 0.19); /* is added on button*/
+    
+}
+
+.border2:hover {
+    background-color:bisque;
+
+}
+
+
+.border3{
+    border: 2px solid #f44336;
+    
+    
+}
+
+.border3:hover {
+    background-color: Green;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 17px 20px 0 rgba(0, 0, 0, 0.19); /* is added on hover*/
+    
+}
+
+
+
+.border4{
+    border: 2px solid black;
+}
+.border4:hover {
+    background-color: black;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
+    0 17px 20px 0 rgba(0, 0, 0, 0.19); /* is added on hover*/
+    color: white
+    
+}
+
+/* making  button group */
+.btn_group .group{
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    float: left;
+    cursor: pointer;
+    transition-duration: 0.4s;   
+}
+
+p {
+    clear: both;
+}
+
+.btn_button .group:not(:last-child) {
+    border-right: none;
+}
+
+.btn_group .group:hover {
+    background-color: #3e8e41;
+}
+
+
+/* vertical button group. remove float and inline-block
+add block */
+
+
+.btn_group .vertical{
+    background-color: white;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display:block;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.4s;   
+}
+
+
+
+.btn_button .vertical:not(:last-child) {
+    border-right: none;
+}
+
+.btn_group .vertical:hover {
+    background-color: #3e8e41;
+}
+
+
+/* image button */
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+}
+
+.container img{
+    width: 100%;
+    height: auto;
+    
+
+}
+
+
+.container .btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: #f1f1f1;
+    padding: 14px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 14px;
+    color: black;
+    transform: translate(-50%, -50%);
+}
+
+.container .btn:hover {
+    background-color: black;
+    color: white;
+}
+
+
+/* Animated Button */
+
+.btn_hover {
+    display: inline-block;
+    border-radius: 5px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 25px;
+    padding: 15px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 4px;
+
+}
+
+.btn_hover span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.btn_hover span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.btn_hover:hover span {
+    padding-right: 25px;
+}
+
+.btn_hover:hover span:after{
+    opacity: 1;
+    right: 0;
+}
